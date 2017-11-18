@@ -173,7 +173,7 @@ box = np.vstack((X.flatten(), Y.flatten())).T
 	
 im_grid = (decoder.predict(grid) * 255.).astype(int)
 
-im_out = Image.new("L", (1400, 1400))
+im_out = Image.new("L", (1680, 1680))
 
 indx = 0
 for b in box:
