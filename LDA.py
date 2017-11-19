@@ -165,7 +165,7 @@ print ('For ',step,' steps learning time:', time.time()-leaning_time)
 
 
 #make image from latent space
-X,Y = (np.mgrid[-31:31,-31:31] + 0.5) / 31.
+X,Y = (np.mgrid[-30:30,-30:30] + 0.5) / 30.
 grid = np.vstack((X.flatten(), Y.flatten())).T
 
 X,Y = np.mgrid[0:60,0:60] * 28
